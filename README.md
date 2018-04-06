@@ -18,6 +18,12 @@ I comandi accettati dal sistema sono:
 - `'c'` visualizza il corso di laurea che lo studente frequenta
 - `Ctrl`+`C` termina il programma
 
+## Schema di funzionamento
+
+![immagine](images/rosgraph.png)
+
+Grafico rappresentativo dell'interazione tra i nodi.
+
 ## Prerequisiti
 
 Per eseguire questo package è necessario aver installato ROS (progetto sviluppato su ROS versione kinetic kame) ed aver creato un workspace. Il programma viene eseguito con l'interprete Python 2.7 ed utilizza dei moduli esterni da installare separatamente (`readchar`)
@@ -53,12 +59,6 @@ rosrun homework1 controller.py
 ```
 rosrun homework1 listener.py
 ```
-
-## Schema di funzionamento
-
-![immagine](images/rosgraph.png)
-
-Grafico rappresentativo dell'interazione tra i nodi.
 
 ## Autori
 
