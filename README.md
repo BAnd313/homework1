@@ -67,6 +67,7 @@ Commento
 #### Docente del corso
 
 Prof. Domenico Daniele Bloisi - [dbloisi](https://github.com/dbloisi)
+
 Corso di Laboratorio Ciberfisico
 Modulo di Robot Programming with ROS
 Università degli Studi di Verona
