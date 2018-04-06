@@ -56,9 +56,9 @@ rosrun homework1 listener.py
 
 ## Schema di funzionamento
 
-[immagine]
+[immagine](images/rosgraph.png)
 
-Commento
+Grafico rappresentativo dell'interazione tra i nodi.
 
 ## Autori
 
