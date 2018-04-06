@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 
-import rospy
+import rospy, sys
 from std_msgs.msg import String
 from homework1.msg import Template
 
@@ -10,26 +10,26 @@ choice = ''
 
 
 def printout(data):
-	string = "\nDati studente\n"
-	
+	string = "\n\rDATI STUDENTE\n\r"
+
 	if choice == 'a':
-		string += "Nome: %s\nEtà: %s\nCorso di laurea: %s\n" % (data.name, data.age, data.major)
+		string += "Nome: %s\n\rEtà: %s\n\rCorso di laurea: %s\n\r" % (data.name, data.age, data.major)
 	elif choice == 'n':
-		string += "Nome: %s" % (data.name)
+		string += "Nome: %s\n\r" % (data.name)
 	elif choice == 'e':
-		string += "Età: %s" % (data.age)
+		string += "Età: %s\n\r" % (data.age)
 	elif choice == 'c':
-		string += "Corso di laurea: %s" % (data.major)
-	
-	#rospy.loginfo(string)
-	print(string)
-		
+		string += "Corso di laurea: %s\n\r" % (data.major)
+
+	if choice != '':
+		rospy.loginfo(string)
+
 
 def selectcontent(data):
     global choice
-    
+
     choice = data.data
-    
+
 
 def listener():
 
