@@ -2,7 +2,7 @@
 
 Primo esercizio per il Corso di Laboratorio Ciberfisico, Modulo di Robot Programming with ROS, Università di Verona.
 
-Si tratta di un package per il sistema operativo ROS, scritto in Python. La consegna dell'esercizio è reperibile a [questo indirizzo](http://profs.scienze.univr.it/~bloisi/corsi/homework/homework-1.pdf).
+Si tratta di un package scritto in Python per il sistema operativo ROS. La consegna dell'esercizio è reperibile a [questo indirizzo](http://profs.scienze.univr.it/~bloisi/corsi/homework/homework-1.pdf).
 
 ## Descrizione
 
