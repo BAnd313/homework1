@@ -20,7 +20,7 @@ I comandi accettati dal sistema sono:
 
 ## Schema di funzionamento
 
-![immagine](images/rosgraph.png)
+![](images/rosgraph.png)
 
 Grafico rappresentativo dell'interazione tra i nodi.
 
@@ -62,7 +62,7 @@ rosrun homework1 listener.py
 
 ## Screenshot funzionamento
 
-| ![](images/rosgraph.png)  | ![](images/rosgraph.png) |
+| ![](images/Screenshot_20180406_222821.png)  | ![](images/Screenshot_20180406_223129.png) |
 | ------------------------- | -------------------------|
 
 ## Autori
