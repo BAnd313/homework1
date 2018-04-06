@@ -7,13 +7,14 @@ message = Student()
 
 
 def setMessage() :
+	# This is an example with only one student
 	message.name = "Andrea"
-	message.age = 100
-	message.major = "Bachelor's degree in Computer Science "
+	message.age = 21
+	message.major = "Laurea in Informatica"
 
 
 def talker():
-	pub = rospy.Publisher('/chatter', Student, queue_size=10)
+	pub = rospy.Publisher('/publisher', Student, queue_size=10)
 	rospy.init_node('talker', anonymous=True)
 	rate = rospy.Rate(1) # 1hz
 

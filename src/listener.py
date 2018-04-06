@@ -40,7 +40,7 @@ def listener():
 	# run simultaneously.
 	rospy.init_node('listeners', anonymous=True)
 
-	rospy.Subscriber("chatter", Student, printout)
+	rospy.Subscriber("publisher", Student, printout)
 	rospy.Subscriber("controller", String, selectcontent)
 
 	# spin() simply keeps python from exiting until this node is stopped
