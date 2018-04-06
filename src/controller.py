@@ -20,11 +20,11 @@ def controller():
 	if choice == '\x03':
 	    sigint_callback()
 	
-	if len(choice) == 1 and choice in "enac":
-	    rospy.loginfo(choice)
+	if choice in "enac":
+	    #rospy.loginfo(choice)
 	    pub.publish(choice)
 	
-	rate.sleep()
+	#rate.sleep()
 
 if __name__ == '__main__':
     

@@ -1,4 +1,6 @@
 #!/usr/bin/env python2
+# -*- coding: utf-8 -*-
+
 import rospy
 from std_msgs.msg import String
 from homework1.msg import Template
@@ -8,11 +10,25 @@ choice = ''
 
 
 def printout(data):
-	rospy.loginfo(rospy.get_caller_id() + "10 messages %s", rospy.get_time())
+	string = "\nDati studente\n"
 	
+	if choice == 'a':
+		string += "Nome: %s\nEtà: %s\nCorso di laurea: %s\n" % (data.name, data.age, data.major)
+	elif choice == 'n':
+		string += "Nome: %s" % (data.name)
+	elif choice == 'e':
+		string += "Età: %s" % (data.age)
+	elif choice == 'c':
+		string += "Corso di laurea: %s" % (data.major)
+	
+	#rospy.loginfo(string)
+	print(string)
+		
 
 def selectcontent(data):
-    rospy.loginfo(data)
+    global choice
+    
+    choice = data.data
     
 
 def listener():
@@ -25,6 +41,7 @@ def listener():
 	rospy.init_node('listeners', anonymous=True)
 
 	rospy.Subscriber("chatter", Template, printout)
+	rospy.Subscriber("controller", String, selectcontent)
 
 	# spin() simply keeps python from exiting until this node is stopped
 	rospy.spin()
