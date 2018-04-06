@@ -1,1 +1,2 @@
-CMakeLists.txt linguistic-vendored=false
+* linguist-vendored
+CMakeLists.txt linguist-vendored=false
