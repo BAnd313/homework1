@@ -60,6 +60,10 @@ rosrun homework1 controller.py
 rosrun homework1 listener.py
 ```
 
+## Screenshot funzionamento
+
+![imm1](images/rosgraph.png) ![imm2](images/rosgraph.png)
+
 ## Autori
 
 * **Andrea Benini** - [BAnd313](https://github.com/BAnd313)
