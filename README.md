@@ -62,9 +62,8 @@ rosrun homework1 listener.py
 
 ## Screenshot funzionamento
 
-|                           |                          |
-| ------------------------- | -------------------------|
 | ![](images/rosgraph.png)  | ![](images/rosgraph.png) |
+| ------------------------- | -------------------------|
 
 ## Autori
 
