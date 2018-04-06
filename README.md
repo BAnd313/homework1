@@ -62,7 +62,7 @@ rosrun homework1 listener.py
 
 ## Screenshot funzionamento
 
-![imm1](images/rosgraph.png) ![imm2](images/rosgraph.png)
+| ![imm1](images/rosgraph.png)  | ![imm2](images/rosgraph.png) |
 
 ## Autori
 
