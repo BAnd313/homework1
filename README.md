@@ -22,6 +22,10 @@ I comandi accettati dal sistema sono:
 
 Per eseguire questo package è necessario aver installato ROS (progetto sviluppato su ROS versione kinetic kame) ed aver creato un workspace. Il programma viene eseguito con l'interprete Python 2.7 ed utilizza dei moduli esterni da installare separatamente (`readchar`)
 
+## Installazione
+
+È sufficiente scaricare il package nella cartella `src` del workspace ed eseguire il comando `catkin_make`.
+
 ## Avvio del programma
 
 L'avvio dell'intero programma viene semplificato grazie ad un file launcher (`homework1.launch`) che avvia automaticamente tutti i nodi necessari nell'ordine corretto e su un unico terminale.
@@ -49,3 +53,19 @@ rosrun homework1 controller.py
 ```
 rosrun homework1 listener.py
 ```
+
+## Schema di funzionamento
+
+[immagine]
+
+Commento
+
+## Autori
+
+* **Andrea Benini** - [BAnd313](https://github.com/BAnd313)
+
+
+
+## Licenza
+
+Software distribuito sotto licenza GNU LGPLv3. Vedi `LICENSE` per ulteriori informazioni.
