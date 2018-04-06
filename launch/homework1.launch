@@ -1,5 +1,5 @@
 <launch>
     <node pkg="homework1" type="talker.py" name="talker" />
-    <node pkg="homework1" type="controller.py" name="controller" />
+    <node pkg="homework1" type="controller.py" name="controller" output="screen" required="true"/>
     <node pkg="homework1" type="listener.py" name="listener" output="screen" />
 </launch>
