@@ -13,7 +13,6 @@ def sigint_callback():
 
 
 def controller():
-    rate = rospy.Rate(1) # 1hz
     global lastchoice
 
     choice = readchar.readkey()
@@ -22,14 +21,14 @@ def controller():
     if choice == '\x03':
         sigint_callback()
 
-    if choice in "enac":
+    if choice in "CANEenac":
+        choice = choice.lower()
         if choice != lastchoice:
             rospy.loginfo("HAI SELEZIONATO %s" % choice)
             lastchoice = choice
 
         pub.publish(choice)
 
-    #rate.sleep()
 
 if __name__ == '__main__':
     pub = rospy.Publisher('controller', String, queue_size=10)
