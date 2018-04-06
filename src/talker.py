@@ -1,9 +1,9 @@
 #!/usr/bin/env python2
 # license removed for brevity
 import rospy
-from homework1.msg import Template
+from homework1.msg import Student
 
-message = Template()
+message = Student()
 
 
 def setMessage() :
@@ -13,7 +13,7 @@ def setMessage() :
 
 
 def talker():
-	pub = rospy.Publisher('/chatter', Template, queue_size=10)
+	pub = rospy.Publisher('/chatter', Student, queue_size=10)
 	rospy.init_node('talker', anonymous=True)
 	rate = rospy.Rate(1) # 1hz
 

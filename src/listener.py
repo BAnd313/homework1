@@ -3,7 +3,7 @@
 
 import rospy, sys
 from std_msgs.msg import String
-from homework1.msg import Template
+from homework1.msg import Student
 
 
 choice = ''
@@ -40,7 +40,7 @@ def listener():
 	# run simultaneously.
 	rospy.init_node('listeners', anonymous=True)
 
-	rospy.Subscriber("chatter", Template, printout)
+	rospy.Subscriber("chatter", Student, printout)
 	rospy.Subscriber("controller", String, selectcontent)
 
 	# spin() simply keeps python from exiting until this node is stopped
