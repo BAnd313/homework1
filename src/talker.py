@@ -20,7 +20,7 @@ def talker():
 
 	while not rospy.is_shutdown():
 		setMessage()
-		#rospy.loginfo(message)
+		rospy.loginfo(message)
 		pub.publish(message)
 		rate.sleep()
 
